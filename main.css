@@ -1,4 +1,4 @@
-body {
+body { 
     background-color: lightblue;
     color: maroon;
     font-family: Arial;
@@ -19,4 +19,28 @@ footer {
     padding: 10px;
     font-size: 16pt;
     text-align: right;
+}
+
+a {
+
+}
+
+a:visited {
+    color: bisque;
+    background-color: darkcyan;
+ 
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+
+}
+
+a:active {
+    color: pink;
+    background-color: green;
+
 }
