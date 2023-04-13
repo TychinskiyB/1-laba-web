@@ -16,6 +16,19 @@
             height: 100px;
             overflow-y: auto;
             overflow-x: hidden;
+            position: relative;
+            background: linear-gradient(#ccf, #ddf);
+        }
+        .second {
+           
+            left: 380px;
+            top: 120px;
+            position: fixed;
+        }
+        .second:hover{
+            z-index: 1;
+            top: 60px;
+            left: 320px;
         }
     </style>
    
@@ -36,7 +49,7 @@
              У меня есть чит-коды.
             </div>
         
-            <div>
+            <div class="second">
             Если вы заметили фактические ошибки или неточности в логике – напишите мне на book@alexeymarkov.ru.
              Если книга на вас как-то повлияла или помогла – напишите, как именно, мне интересно.
             </div>
