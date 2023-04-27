@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ТЫчинский Богдан Владимирович</title>
+    <title>Тычинский Богдан Владимирович</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+        function showSum() {    
+            let a = 5154;
+            let b = 7891;
+            let result = a + b;
+            alert('Сумма ' + a + ' и ' + b + 'равна ' + result);
+        }
+
+        
+    </script>
+    <style>
+        .massage1 {
+            cursor: pointer;
+            background: plum;
+            display: inline-block;
+            width: 400px;
+            height: 60px;
+            
+            position: relative;
+            border-radius: 10%;
+            right: -370px;
+            top: 0px;
+            
+        }
+        .massage2 {
+            cursor: pointer;
+            background: plum;
+            display: inline-block;
+            width: 400px;
+            height: 60px;
+            
+            position: relative;
+            border-radius: 10%; 
+            right: -500px;
+            top: -0px;
+        }
+
+   
+        
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +54,8 @@
 
 
     <main>
-
+        <div class="massage1" onclick="showSum()">Сколько будет 5154+7891?</div>
+        <div class="massage2">Узнать, кто автор страницы</div>
     </main>
     <footer>
         &copy; Тычинский Богдан, ФБИ-12, 2 курс, 2023
