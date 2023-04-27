@@ -7,9 +7,14 @@
     <title>Тычинский Богдан Владимирович</title>
     <link rel="stylesheet" href="main.css">
     <script>
-        function showSum() {    
-            let a = 5154;
-            let b = 7891;
+        
+
+        function showSum() { 
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB'); 
+            
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
             let result = a + b;
             alert('Сумма ' + a + ' и ' + b + 'равна ' + result);
         }
@@ -20,7 +25,7 @@
         }
     </script>
     <style>
-        .massage1 {
+        .massage {
             cursor: pointer;
             background: plum;
             display: inline-block;
@@ -33,7 +38,7 @@
             top: 0px;
             
         }
-        .massage2 {
+        .massage {
             cursor: pointer;
             background: plum;
             display: inline-block;
@@ -57,8 +62,12 @@
 
 
     <main>
-        <div class="massage1" onclick="showSum()">Сколько будет 5154+7891?</div>
-        <div class="massage2" onclick="showAuthor()">Узнать, кто автор страницы</div>
+        <label>Первое число: <input type="number" value="5154" id="numberA"></label> <br>
+        <label>Второе число: <input type="number" value="7891" id="numberB"></label> <br>
+        <div class="massage" onclick="showSum()">Найти сумму чисел</div>
+
+        <div class="massage" onclick="showSum()">Сколько будет 5154+7891?</div>
+        <div class="massage" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
     <footer onclick="showAuthor()">
         &copy; Тычинский Богдан, ФБИ-12, 2 курс, 2023
