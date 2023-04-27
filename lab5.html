@@ -14,7 +14,10 @@
             alert('Сумма ' + a + ' и ' + b + 'равна ' + result);
         }
 
-        
+        function showAuthor() {
+            let author = 'Автор страницы:\nТычинский Богдан Владимирович'
+            alert(author);
+        }
     </script>
     <style>
         .massage1 {
@@ -48,16 +51,16 @@
     </style>
 </head>
 <body>
-    <header>
+    <header onclick="showAuthor()">
         НГТУ, ФБ, Лабораторная работа 5
     </header>
 
 
     <main>
         <div class="massage1" onclick="showSum()">Сколько будет 5154+7891?</div>
-        <div class="massage2">Узнать, кто автор страницы</div>
+        <div class="massage2" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
-    <footer>
+    <footer onclick="showAuthor()">
         &copy; Тычинский Богдан, ФБИ-12, 2 курс, 2023
     </footer>
 </body>
