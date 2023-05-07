@@ -64,7 +64,21 @@
             output.style.color =  textColor;
         }
 
+        function showsumkorz() {
+            let inputC = document.getElementById('numberC');
+            let inputD = document.getElementById('numberD');
+            let inputE = document.getElementById('numberE');
+            let inputF = document.getElementById('numberF');
 
+            let c = parseInt (inputC.value);
+            let d = parseInt (inputD.value);
+            let e = parseInt (inputE.value);
+            let f = parseInt (inputF.value);
+            let result = (c*100) + (d*80) + (e*150) + (f*300);
+            let output = document.getElementById('output2');
+            output.innerHTML = 'Общая цена:'+ ' ' + result + ' ' +'&#8381';
+
+        }
 
 
 
@@ -103,8 +117,26 @@
             height: 40;
         }
 
-
+        #output2 {
+            width: 300px;
+            height: 40px;
+            font-size: larger;
+        }
         
+
+        .border {
+            border: 4px solid;
+            width: 290px;
+            height: 300px;
+            background-color: rgb(18, 90, 114);
+            color: white;
+        }
+
+        .name {
+            color:cornsilk;
+            font-size: xx-large;
+        }
+
     </style>
 </head>
 <body>
@@ -131,6 +163,18 @@
         </div>
 
         <div id="output"></div>
+
+
+
+        <div class="border">
+            <div class="name">Корзина товаров</div>
+        <label>Яблоки (100р/шт)<input type="number" value="1" id="numberC"></label> <br>
+        <label>Грушиь (80р/шт)<input type="number" value="1" id="numberD"></label> <br>
+        <label>Апельсины (150р/шт) <input type="number" value="1" id="numberE"></label> <br>
+        <label>Дыни (300р/шт)<input type="number" value="1" id="numberF"></label> <br>
+
+        <input type="button" value="Рассчитать" onclick="showsumkorz()">
+        <div id="output2"></div>
     </main>
 
 
