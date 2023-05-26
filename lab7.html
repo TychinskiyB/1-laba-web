@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <script>
+
+
     function addBlocks() {
         let blocks = document.getElementById('blocks');
         for (let i=0; i < 10; i++){
@@ -36,8 +38,21 @@
 
         let average = sum / exchange.length;
         document.getElementById('detail').innerHTML = 'Среднее значение: ' + average;
-        
+
     }
+    
+    function opacityBlock(){
+        let opacity = document.getElementById('opacity-block');
+        for (let i = 0; i < 10; i++) {
+            let blockCreate = document.createElement ('div');
+            blockCreate.style.opacity = (i*10) + '%';
+            blockCreate.style.width = '100px';
+            blockCreate.style.height = '100px';
+            blockCreate.style.backgroundColor = 'green';
+            opacity.appendChild(blockCreate);
+                
+            }
+    }  
     
 </script>
 <body>
@@ -54,6 +69,10 @@
         <button onclick="showEcxhange()">Курс доллара</button>
         <table border="1" id="dollar-exchange"></table>
         <div id="detail"></div>
+
+        <button onclick="opacityBlock()">Создать полупрозрачные блоки</button>
+        <div id="opacity-block"></div>
+
     </main>
     
 </body>
