@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тычинский Богдан Владимирович</title>
+    <link rel="stylesheet" href="rgz.css">
+</head>
+<script>
+  function Kyrs(){
+    let price = [511.8, 508, 508.2, 513.8, 513.8, 520, 516, 515.2, 515, 513.2,
+        519.6, 511.8, 513.4, 544.4, 566.8, 588, 576.8, 590]
+    let sum=0;
+    for(let i=0; i<price.length; i++){
+      sum = sum+price[i];
+    }
+    let average = sum / price.length;
+    let min = Math.min.apply(Math,price)
+    let max = Math.max.apply(Math,price)
+    document.getElementById('details').innerHTML='Среднее значение: ' + average +"<br />"+ 'Минимальное значение: ' + min +"<br />" +'Максимальное значение: ' + max;
+    }
+      
+  
+  </script> 
+<style>
+  .Logo {
+        left: 500px;
+        position: fixed;
+        height: 100px;
+        margin-top: 10;
+      }
+
+
+ 
+
+  
+</style>
+<header>
+  <div class="Logo">
+    <img src="ЛОГо сПНГ.png">
+</div>
+    <nav>
+        <ul>
+            <img src="Логотип.png" width="10%">
+          <li><a href="1str.html">О компании</a></li>
+          <li><a href="2str.html">Основные финансовые показатели</a></li>
+          <li><a href="3str.html">Контактные данные</a></li>
+          <li><a href="4str.html">Видео</a></li>
+        </ul>
+      </nav>
+</header>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <table border="1" width="30%">
+      <tr>
+        <td>Дата</td>
+        <td>Цена акции</td>
+      </tr>
+      <tr>
+        <td>3 Апреля</td>
+        <td>511.8</td>
+      </tr>
+      <tr>
+        <td>4 Апреля</td>
+        <td>508</td>
+      </tr>
+      <tr>
+        <td>5 Апреля</td>
+        <td>508.2</td>
+      </tr>
+      <tr>
+        <td>6 Апреля</td>
+        <td>513.8</td>
+      </tr>
+      <tr>
+        <td>7 Апреля</td>
+        <td>513.8</td>
+      </tr>
+      <tr>
+        <td>10 Апреля</td>
+        <td>520</td>
+      </tr>
+      <tr>
+        <td>11 Апреля</td>
+        <td>516</td>
+      </tr>
+      <tr>
+        <td>12 Апреля</td>
+        <td>515.2</td>
+      </tr>
+      <tr>
+        <td>13 Апреля</td>
+        <td>515</td>
+      </tr>
+      <tr>
+        <td>14 Апреля</td>
+        <td>513.2</td>
+      </tr>
+      <tr>
+        <td>17 Апреля</td>
+        <td>519.6</td>
+      </tr>
+      <tr>
+        <td>18 Апреля</td>
+        <td>511.8</td>
+      </tr>
+      <tr>
+        <td>19 Апреля</td>
+        <td>513.4</td>
+      </tr>
+      <tr>
+        <td>20 Апреля</td>
+        <td>544.4</td>
+      </tr>
+      <tr>
+        <td>21 Апреля</td>
+        <td>566.8</td>
+      </tr>
+      <tr>
+        <td>26 Апреля</td>
+        <td>588</td>
+      </tr>
+      <tr>
+        <td>27 Апреля</td>
+        <td>576.8</td>
+      </tr>
+        <td>28 Апреля</td>
+        <td>590</td>
+      </tr>
+
+    </table>
+<div class="knop">
+  <button style= "width:150px;height:50px; background-color: rgb(87, 87, 87);" onclick="Kyrs()">Показатели акций</button>
+  <div id="details"></div>
+</div>
+ 
+
+  </body>
+<footer>
+  <h1>Строим как для себя!</h1>
+</footer>
+</html>
